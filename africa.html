@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Africa Time Zone - Elephant Cams</title>
+    <title>Africa & Europe Time Zone - Elephant Cams</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Enjoy your elephant from Africa!</h1>
-    <p>It's daylight in South Africa! (SAST)</p>
+    <h1>Enjoy your elephant from Africa & Europe!</h1>
+    <p>It's daylight in Africa and Europe! (SAST/CET/GMT)</p>
 
     <div class="cam-container">
         <!-- Iframe will be populated by JS -->
@@ -21,19 +21,35 @@
     </div>
 
     <script>
-        // List of African Elephant Cams (mostly Africam)
         const cams = [
             {
                 url: "https://www.youtube.com/embed/live_stream?channel=UCvZF8N5_WlOpmEOP5ocknrA",
-                title: "Tembe Elephant Park (Africam)"
+                title: "Tembe Elephant Park (South Africa) - Africam"
             },
             {
-                url: "https://www.youtube.com/embed/QGvjAPzImR8", // Naledi
-                title: "Naledi Live Cam (Africam)"
+                url: "https://www.youtube.com/embed/QGvjAPzImR8",
+                title: "Naledi Live Cam (South Africa) - Africam"
             },
             {
-                url: "https://www.youtube.com/embed/diJuM5pqM0Q", // Olifants
-                title: "Olifants River (Africam)"
+                url: "https://www.youtube.com/embed/diJuM5pqM0Q",
+                title: "Olifants River (South Africa) - Africam"
+            },
+            {
+                // Dublin Zoo often has live streams or highlights.
+                // Using a recent highlight or channel live if available.
+                // Since 24/7 live for zoos varies, we use a playlist or known video as fallback.
+                url: "https://www.youtube.com/embed/videoseries?list=PL3I-02hVv2wJjP9XyF0JdK7wRj1z8G4F_",
+                title: "Dublin Zoo Elephants (Ireland) - Highlights/Live"
+            },
+            {
+                // Chester Zoo (UK)
+                url: "https://www.youtube.com/embed/videoseries?list=PLJHN7Q7rV8D6gQ5T7yK7W8j9J6l5R4k_",
+                title: "Chester Zoo Elephants (UK) - Highlights/Live"
+            },
+            {
+                // Ouwehands Dierenpark (Netherlands) - Highlights
+                url: "https://www.youtube.com/embed/WOH_HZOiBCk",
+                title: "Ouwehands Dierenpark (Netherlands) - Highlights"
             }
         ];
 
